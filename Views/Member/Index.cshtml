@@ -1,0 +1,43 @@
+@model IEnumerable<nashtech_form.Mvc.Models.Member>
+
+@{
+    ViewData["Title"] = $"Book list ({Model.Count()} items)";
+}
+
+<p class="h3">Table</p>
+<table class="table table-hover table-sm">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Id)</th>
+            <th>@Html.DisplayNameFor(model => model.firstName)</th>
+            <th>@Html.DisplayNameFor(model => model.lastName)</th>
+            <th>@Html.DisplayNameFor(model => model.Gender)</th>
+            <th>@Html.DisplayNameFor(model => model.DOB)</th>
+            <th>@Html.DisplayNameFor(model => model.phoneNumber)</th>
+            <th>@Html.DisplayNameFor(model => model.birthPlace)</th>
+            <th>@Html.DisplayNameFor(model => model.Age)</th>
+            <th>@Html.DisplayNameFor(model => model.isGraduated)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td><a asp-route-id="@item.Id" asp-action="Details">@item.Id</a></td>
+                <td>@item.firstName</td>
+                <td>@item.lastName</td>
+                <td>@item.Gender</td>
+                <td>@item.DOB</td>
+                <td>@item.phoneNumber</td>
+                <td>@item.birthPlace</td>
+                <td>@item.Age</td>
+                <td>@item.isGraduated</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info">Details</a>                    
+                </td>
+            </tr>
+        }
+        <tr><td colspan="5"><strong>Total: @Model.Count()</strong></td></tr>
+    </tbody>
+</table>

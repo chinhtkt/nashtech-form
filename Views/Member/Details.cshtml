@@ -1,0 +1,22 @@
+@model nashtech_form.Mvc.Models.Member
+
+@{
+    ViewData["Title"] = Model.lastName;
+}
+
+<div>
+    <p class="h3">@Model.lastName</p>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2"><label asp-for="firstName"></label></dt>
+        <dd class="col-sm-10">@Model.firstName</dd>
+        <dt class="col-sm-2"><label asp-for="lastName"></label></dt>
+        <dd class="col-sm-10">@Model.lastName</dd>
+    </dl>
+</div>
+
+<hr />
+
+<div>    
+    <a asp-action="Index" class="btn btn-sm btn-outline-secondary">Back to List</a>    
+</div>
