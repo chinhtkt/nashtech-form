@@ -19,6 +19,7 @@ namespace nashtech_form.Mvc.Models
                 Members = new HashSet<Member>() {
                     new Member{Id = 1, firstName = "nguyen" , lastName="chinh", Gender="Male", DOB= new DateTime(2000,5,12), phoneNumber= 0925302500, birthPlace="Ha Noi", Age = 21, isGraduated = true},
                     new Member{Id = 2, firstName = "nguyen" , lastName="chien", Gender="Male", DOB= new DateTime(1964,04,09), phoneNumber= 0934571699, birthPlace="Ha Noi", Age = 54, isGraduated = true},
+                    
                 };
             }
             else

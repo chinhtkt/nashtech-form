@@ -28,6 +28,20 @@ namespace nashtech_form.Mvc.Controllers
             if (b == null) return NotFound();
             else return View(b);
         }
+        public IActionResult Delete(int id)
+        {
+            var b = _service.Get(id);
+            if (b == null) return NotFound();
+            else return View(b);
+        }
+
+        [HttpPost]
+        public IActionResult Delete(Member member)
+        {
+            _service.Delete(member.Id);
+            _service.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
-    
+
 }

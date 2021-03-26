@@ -1,10 +1,13 @@
 @model nashtech_form.Mvc.Models.Member
 
 @{
-    ViewData["Title"] = Model.lastName;
+    ViewData["Title"] = "Confirmation";
 }
 
+<p class="p-3 alert-danger">Are you sure you want to delete this?</p>
+
 <div>
+    <p class="h3">@Model.firstName</p>
     <p class="h3">@Model.lastName</p>
     <hr />
     <dl class="row">
@@ -21,16 +24,16 @@
         <dt class="col-sm-2"><label asp-for="birthPlace"></label></dt>
         <dd class="col-sm-10">@Model.birthPlace</dd>
         <dt class="col-sm-2"><label asp-for="Age"></label></dt>
-        <dd class="col-sm-10">@Model.Age </dd>
+        <dd class="col-sm-10">@Model.Age</dd>
         <dt class="col-sm-2"><label asp-for="isGraduated"></label></dt>
         <dd class="col-sm-10">@Model.isGraduated </dd>
-        
     </dl>
 </div>
 
 <hr />
 
-<div>    
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id" />
+    <input type="submit" value="Delete" class="btn btn-outline-danger btn-sm" /> |
     <a asp-action="Index" class="btn btn-sm btn-outline-secondary">Back to List</a>
-    <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-sm btn-outline-danger">Delete</a>    
-</div>
+</form>
