@@ -1,5 +1,11 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+
+
+    @if (! String.IsNullOrEmpty(ViewBag.Username))
+{
+    <h1>Hello @ViewBag.Username </h1>
+}
 }
 
 <div class="text-center">

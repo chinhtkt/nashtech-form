@@ -1,2 +1,25 @@
 <?xml version="1.0"?>
-<ArrayOfMember xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+<ArrayOfMember xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Member>
+    <Id>1</Id>
+    <firstName>duc</firstName>
+    <lastName>chinh</lastName>
+    <Gender>Male</Gender>
+    <DOB>2000-01-20T00:00:00</DOB>
+    <phoneNumber>12345678</phoneNumber>
+    <birthPlace>Ha dong</birthPlace>
+    <Age>23123</Age>
+    <IsGraduated>true</IsGraduated>
+  </Member>
+  <Member>
+    <Id>2</Id>
+    <firstName>dasd</firstName>
+    <lastName>dasd</lastName>
+    <Gender>Male</Gender>
+    <DOB>0001-01-01T00:00:00</DOB>
+    <phoneNumber>912015588</phoneNumber>
+    <birthPlace>Ha noi</birthPlace>
+    <Age>32</Age>
+    <IsGraduated>true</IsGraduated>
+  </Member>
+</ArrayOfMember>

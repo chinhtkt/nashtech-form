@@ -42,6 +42,39 @@ namespace nashtech_form.Mvc.Controllers
             _service.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public IActionResult Create() => base.View(_service.Create());
+
+        [HttpPost]
+        public IActionResult Create(Member member)
+        {
+            if (ModelState.IsValid)
+            {
+                _service.Add(member);
+                _service.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(member);
+        }
+
+        public IActionResult Edit(int id)
+        {
+            var b = _service.Get(id);
+            if (b == null) return NotFound();
+            else return View(b);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Member member)
+        {
+            if (ModelState.IsValid)
+            {
+                _service.Update(member);
+                _service.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(member);
+        }
     }
 
 }

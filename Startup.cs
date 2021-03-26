@@ -50,8 +50,14 @@ namespace nashtech_form.Mvc
 
             app.UseEndpoints(endpoints =>
             {
-               endpoints.MapControllerRoute("member", "{action=Index}/{id?}", new {controller = "Member"});
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                
             });
         }
+            
+               
+        
     }
 }

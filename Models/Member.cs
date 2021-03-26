@@ -21,8 +21,9 @@ namespace nashtech_form.Mvc.Models
         public string birthPlace { get; set; }
         [Required, DisplayName("Age")]
         public int Age { get; set; }
-        [Required, DisplayName("isGraduated")]
-        public bool isGraduated { get; set; }
-
+        [Required, DisplayName("IsGraduated")]
+        public bool IsGraduated { get; set; }
+        [DisplayName("File")]
+        public string DataFile{get; set;}
     }
 }

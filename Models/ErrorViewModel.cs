@@ -1,6 +1,6 @@
 using System;
 
-namespace nashtech_form.Models
+namespace nashtech_form.Mvc.Models
 {
     public class ErrorViewModel
     {

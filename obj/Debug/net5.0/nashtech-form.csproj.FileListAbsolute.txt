@@ -83,3 +83,7 @@ E:\nashtech\nashtech-form\obj\Debug\net5.0\nashtech-form.pdb
 E:\nashtech\nashtech-form\obj\Debug\net5.0\nashtech-form.genruntimeconfig.cache
 E:\nashtech\nashtech-form\obj\Debug\net5.0\nashtech-form.csproj.CopyComplete
 E:\nashtech\nashtech-form\obj\Debug\net5.0\Razor\Views\Member\Delete.cshtml.g.cs
+E:\nashtech-form\obj\Debug\net5.0\Razor\Views\Member\Delete.cshtml.g.cs
+E:\nashtech-form\obj\Debug\net5.0\Razor\Views\Member\Create.cshtml.g.cs
+E:\nashtech-form\obj\Debug\net5.0\Razor\Views\Member\Edit.cshtml.g.cs
+E:\nashtech-form\obj\Debug\net5.0\Razor\Views\Home\LoginForm.cshtml.g.cs
